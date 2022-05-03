@@ -6,7 +6,7 @@ echo "Enter Your Username"
 read a
 echo "Enter Your Password"
 read b
-if [ $a == `base64 -d menu/.user.info` ] && [ $b == `base64 -d menu/.pass.info` ]
+if [ $a == `base64 -d .user.info` ] && [ $b == `base64 -d .pass.info` ]
 then
    echo "Login Success" 
    menu/menu.sh
